@@ -3,10 +3,15 @@ import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp, Users, Clock, Globe,
 import { Button } from "@/components/ui/button";
 import Section from "@/components/layout/Section";
 import LeadForm from "@/components/LeadForm";
+import { SEO } from "@/components/layout/SEO";
 
 const Home = () => {
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Full-Service Property Management" 
+        description="Cost-friendly, professional property management in the Greater Seattle area. We treat your home as if it were our own. Get a free rental analysis today."
+      />
       {/* Hero Section */}
       <section className="relative h-[90vh] min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">

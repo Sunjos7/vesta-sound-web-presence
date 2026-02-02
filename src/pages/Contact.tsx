@@ -1,10 +1,15 @@
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import Section from "@/components/layout/Section";
 import LeadForm from "@/components/LeadForm";
+import { SEO } from "@/components/layout/SEO";
 
 const Contact = () => {
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Contact Us | Free Rental Analysis" 
+        description="Get in touch with Vesta Sound Property Group for professional property management in the Seattle area or request a free rental analysis."
+      />
       {/* Header */}
       <section className="bg-secondary/30 py-24">
         <div className="container mx-auto px-4 md:px-6 text-center">

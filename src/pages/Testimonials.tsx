@@ -19,6 +19,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { blink } from "@/lib/blink";
+import { SEO } from "@/components/layout/SEO";
 
 const testimonialSchema = z.object({
   authorName: z.string().min(2, "Name must be at least 2 characters"),
@@ -94,6 +95,10 @@ const Testimonials = () => {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Client Testimonials & Reviews" 
+        description="Read reviews from property owners and tenants who have experienced the professional care of Vesta Sound Property Group in Seattle."
+      />
       {/* Header */}
       <section className="bg-primary text-primary-foreground py-20">
         <div className="container mx-auto px-4 md:px-6 text-center space-y-4">

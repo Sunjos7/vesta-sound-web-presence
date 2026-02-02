@@ -1,10 +1,15 @@
 import { ArrowRight, MapPin, Target, Heart, Building2, Gem, Cpu, Waves, Mountain, Plane, Trees, GlassWater } from "lucide-react";
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/layout/SEO";
 
 const About = () => {
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="About Our Local Expertise" 
+        description="Learn about Vesta Sound Property Group's mission to protect your investments and provide hands-on property management in the Seattle and Puget Sound area."
+      />
       {/* Hero Header */}
       <section className="bg-primary text-primary-foreground py-24 md:py-32">
         <div className="container mx-auto px-4 md:px-6">

@@ -1,6 +1,7 @@
 import { ShieldCheck, Megaphone, ClipboardList, Wallet, Wrench, Search, MessageSquare, AlertCircle, CheckCircle2 } from "lucide-react";
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/layout/SEO";
 
 const Services = () => {
   const services = [
@@ -38,6 +39,10 @@ const Services = () => {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Our Management Services" 
+        description="Comprehensive property management services including tenant screening, marketing, rent collection, and maintenance in the Greater Seattle area."
+      />
       {/* Header */}
       <section className="bg-secondary/30 py-24 border-b border-border">
         <div className="container mx-auto px-4 md:px-6 text-center">

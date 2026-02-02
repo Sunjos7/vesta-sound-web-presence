@@ -4,6 +4,7 @@ import PropertyCard from "@/components/ui/PropertyCard";
 import { blink } from "@/lib/blink";
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
+import { SEO } from "@/components/layout/SEO";
 
 const Listings = () => {
   const [properties, setProperties] = useState([
@@ -232,6 +233,10 @@ const Listings = () => {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Managed Properties Portfolio" 
+        description="View our portfolio of managed properties and past listings across Seattle, Bellevue, Redmond, and the Puget Sound area."
+      />
       {/* Header */}
       <section className="bg-primary text-primary-foreground py-24">
         <div className="container mx-auto px-4 md:px-6">
