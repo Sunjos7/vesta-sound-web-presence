@@ -57,8 +57,8 @@ const Home = () => {
             },
             {
               icon: CheckCircle2,
-              title: "20-Point Screening",
-              description: "Fair Housing compliant tenant vetting including credit, criminal, and rental history."
+              title: "Rigorous Screening",
+              description: "Fair Housing compliant vetting including credit, criminal, and rental history."
             },
             {
               icon: TrendingUp,
@@ -124,7 +124,7 @@ const Home = () => {
             {
               step: "02",
               title: "Market & Screen",
-              description: "Professional marketing and rigorous 20-point tenant screening."
+              description: "Professional marketing and rigorous tenant screening."
             },
             {
               step: "03",
@@ -156,9 +156,7 @@ const Home = () => {
               <h3 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
                 Ready for a Stress-Free Ownership Experience?
               </h3>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Join hundreds of property owners who trust Vesta Sound to handle the complexities of property management while they enjoy the returns.
-              </p>
+
             </div>
             
             <ul className="space-y-4">
