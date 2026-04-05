@@ -25,8 +25,7 @@ const Home = () => {
           <div className="max-w-4xl space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-serif text-white leading-tight">
-                Expert care for your investment properties. <br className="hidden md:block" />
-                Serving the Greater Seattle Area.
+                Expert Property Management<br className="hidden md:block" /> in Greater Seattle.
               </h1>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -37,11 +36,7 @@ const Home = () => {
                 <Link to="/listings">View Listings</Link>
               </Button>
             </div>
-            <div className="flex items-center space-x-6 pt-8 border-t border-white/10 max-w-lg">
-              <p className="text-sm text-white/80">
-                Professional property management serving Seattle, Bellevue, and the greater Puget Sound area.
-              </p>
-            </div>
+
           </div>
         </div>
       </section>
