@@ -67,16 +67,24 @@ const Navbar = () => {
           <Button asChild className="rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95 bg-primary text-primary-foreground">
             <Link to="/contact">Get Free Analysis</Link>
           </Button>
+          <Button asChild variant="outline" className="rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all hover:scale-105 active:scale-95 flex items-center gap-2">
+            <a href="tel:+14254492733"><Phone size={15} /> Call Us</a>
+          </Button>
         </div>
 
-        {/* Mobile Toggle */}
-        <button
-          className="lg:hidden p-2 text-foreground"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        {/* Mobile: Call Us + Hamburger */}
+        <div className="lg:hidden flex items-center gap-2">
+          <Button asChild size="sm" className="rounded-full flex items-center gap-1.5 bg-primary text-primary-foreground hover:scale-105 active:scale-95 transition-all">
+            <a href="tel:+14254492733"><Phone size={14} /> Call Us</a>
+          </Button>
+          <button
+            className="p-2 text-foreground"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}
