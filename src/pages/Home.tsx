@@ -109,9 +109,7 @@ const Home = () => {
       {/* How It Works */}
       <Section>
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-sm uppercase tracking-[0.3em] font-bold text-primary">Simple Process</h2>
           <h3 className="text-4xl md:text-5xl font-serif font-bold">How It Works</h3>
-          <p className="text-xl text-muted-foreground font-light">Our 3-step approach to frustration-free property management.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
@@ -121,17 +119,17 @@ const Home = () => {
             {
               step: "01",
               title: "Consult",
-              description: "We perform a comprehensive rental analysis and define a strategy tailored to your property goals."
+              description: "Free rental analysis and a strategy built around your goals."
             },
             {
               step: "02",
               title: "Market & Screen",
-              description: "High-end photography and multi-platform marketing paired with our 20-point tenant screening."
+              description: "Professional marketing and rigorous 20-point tenant screening."
             },
             {
               step: "03",
               title: "Manage & Report",
-              description: "Hands-on oversight, rent collection, and transparent 24/7 reporting via our online portal."
+              description: "Rent collection, maintenance, and 24/7 online reporting."
             }
           ].map((item, idx) => (
             <div key={idx} className="relative z-10 text-center space-y-6">
