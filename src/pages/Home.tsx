@@ -97,7 +97,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
           <Quote className="mx-auto text-accent mb-4" size={48} />
           <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight italic">
-            "We treat your home as if it were our own. Our goal is to protect your investment, reduce your stress, and maximize your returns through local expertise and hands-on care."
+            "Your investment, protected. Your stress, gone. Your returns, maximized."
           </h2>
           <div className="pt-4">
             <p className="text-xl font-bold font-serif">The Vesta Sound Team</p>
