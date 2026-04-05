@@ -9,8 +9,9 @@ const Home = () => {
   return (
     <div className="flex flex-col w-full">
       <SEO 
-        title="Full-Service Property Management" 
-        description="Cost-friendly, professional property management in the Greater Seattle area. We treat your home as if it were our own. Get a free rental analysis today."
+        title="Seattle Property Management | Rental Homes & Real Estate Services"
+        description="Vesta Sound Property Group offers full-service property management in Seattle, Bellevue, Redmond, Kirkland & Greater Puget Sound. Tenant screening, rent collection, maintenance & more. Get a free rental analysis today."
+        keywords="Seattle property management, property manager Seattle WA, rental homes Seattle, houses for rent Seattle, Seattle real estate, Greater Seattle property management, Puget Sound rental management, Seattle landlord services, investment property Seattle, Bellevue property management, Redmond property management, Kirkland property management, Seattle leasing agent, tenant screening Seattle, rental property Seattle, free rental analysis Seattle"
       />
       {/* Hero Section */}
       <section className="relative h-[90vh] min-h-[700px] flex items-center overflow-hidden">
@@ -97,7 +98,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
           <Quote className="mx-auto text-accent mb-4" size={48} />
           <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight italic">
-            "Your investment, protected. Your stress, gone. Your returns, maximized."
+            "We manage your property like it's our own. Because your success is our reputation."
           </h2>
           <div className="pt-4">
             <p className="text-xl font-bold font-serif">The Vesta Sound Team</p>
