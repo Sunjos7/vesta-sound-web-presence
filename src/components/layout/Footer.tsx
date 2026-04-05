@@ -24,8 +24,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-primary-foreground/80 text-sm leading-relaxed max-w-xs">
-              Full-service residential property management in the Greater Seattle area. 
-              We treat your home as if it were our own, protecting your investment and maximizing returns.
+              A small, local team managing rentals across the Greater Seattle area. We're hands-on, easy to reach, and genuinely invested in doing right by our owners.
             </p>
             <div className="flex space-x-4">
               {[Facebook, Instagram, Linkedin].map((Icon, idx) => (

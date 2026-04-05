@@ -45,8 +45,8 @@ const Navbar = () => {
             <span className="text-xl font-bold font-serif tracking-tight leading-none">
               VESTA SOUND
             </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-muted-foreground">
-              Property Group
+            <span className="text-[10px] font-medium text-muted-foreground tracking-wide">
+              Property Management
             </span>
           </div>
         </Link>

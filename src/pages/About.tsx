@@ -15,10 +15,10 @@ const About = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold font-serif leading-tight">
-              A Personal Approach to <span className="text-accent">Property Management</span>
+              We're a small local team<br /> that actually picks up the phone.
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/80 font-light leading-relaxed">
-              Serving the Greater Seattle & Puget Sound community with integrity, expertise, and a hands-on commitment to excellence.
+              Vesta Sound Property Group serves property owners across Greater Seattle and the Puget Sound — with the kind of care you'd expect from a neighbor, not a corporation.
             </p>
           </div>
         </div>
@@ -39,13 +39,12 @@ const About = () => {
           
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-sm uppercase tracking-[0.3em] font-bold text-primary">Our Mission</h2>
-              <h3 className="text-4xl font-serif font-bold">Protecting Your Investment, Reducing Your Stress</h3>
+              <h3 className="text-4xl font-serif font-bold">Why we started Vesta Sound</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Vesta Sound Property Group was founded on a simple principle: property management should be as careful and personal as the management of one's own home.
+                We saw too many landlords frustrated — not because rental property is hard, but because they couldn't get a straight answer or a timely response from whoever was managing it.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                In a market as complex as Seattle, property owners need more than just a rent collector. They need a partner who understands local regulations, maintenance needs, and tenant expectations.
+                We started Vesta Sound to do it differently. We keep our portfolio intentionally small so every owner gets real attention. You'll know our names. We'll know your property.
               </p>
             </div>
             
@@ -55,8 +54,8 @@ const About = () => {
                   <Target size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold font-serif text-lg mb-1">Maximized Returns</h4>
-                  <p className="text-sm text-muted-foreground">Strategic pricing and efficient management to ensure your investment thrives.</p>
+                  <h4 className="font-bold font-serif text-lg mb-1">We keep it personal</h4>
+                  <p className="text-sm text-muted-foreground">Small portfolio, real relationships. We're not trying to be the biggest — just the best for our owners.</p>
                 </div>
               </div>
               <div className="flex space-x-4">
@@ -64,8 +63,8 @@ const About = () => {
                   <Heart size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold font-serif text-lg mb-1">Hands-On Care</h4>
-                  <p className="text-sm text-muted-foreground">Personal attention to detail that large corporate firms simply can't match.</p>
+                  <h4 className="font-bold font-serif text-lg mb-1">We're honest with you</h4>
+                  <p className="text-sm text-muted-foreground">Good news or bad, you'll hear from us. No surprises, no spin — just straight communication.</p>
                 </div>
               </div>
             </div>
@@ -76,9 +75,8 @@ const About = () => {
       {/* Local Focus */}
       <Section className="bg-secondary/50">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-sm uppercase tracking-[0.3em] font-bold text-primary">Local Expertise</h2>
-          <h3 className="text-4xl md:text-5xl font-serif font-bold">Puget Sound Specialists</h3>
-          <p className="text-xl text-muted-foreground font-light">We don't just work here; we live here. We know every neighborhood from Ballard to Bellevue.</p>
+          <h3 className="text-4xl md:text-5xl font-serif font-bold">We live here too</h3>
+          <p className="text-xl text-muted-foreground font-light">We know these neighborhoods — not from a map, but from being here every day. Here's where we work:</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -106,13 +104,13 @@ const About = () => {
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold">Ready to Experience the Vesta Sound Difference?</h3>
+            <h3 className="text-3xl md:text-4xl font-serif font-bold">Want to see if we're the right fit?</h3>
             <p className="text-lg text-muted-foreground">
-              Let's discuss how we can help you achieve your property investment goals with less stress and more confidence.
+              Give us a call or send a message. We're happy to talk through your situation with no pressure and no commitment.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg" className="h-14 px-8 rounded-full shadow-lg">
-                <a href="/contact">Schedule a Consultation</a>
+                <a href="/contact">Let's Chat</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-14 px-8 rounded-full">
                 <a href="tel:4254492733" className="flex items-center">
