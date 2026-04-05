@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import Listings from "./pages/Listings";
 import Contact from "./pages/Contact";
 import Testimonials from "./pages/Testimonials";
+import OwnerPortal from "./pages/OwnerPortal";
 import { Toaster } from "@/components/ui/sonner";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/listings" element={<Listings />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/owner-portal" element={<OwnerPortal />} />
           </Routes>
         </main>
         <Footer />

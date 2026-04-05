@@ -24,6 +24,7 @@ const Navbar = () => {
     { name: "Testimonials", href: "/testimonials" },
     { name: "Listings", href: "/listings" },
     { name: "Contact", href: "/contact" },
+    { name: "Owner Login", href: "/owner-portal" },
   ];
 
   return (
