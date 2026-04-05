@@ -25,11 +25,8 @@ const Home = () => {
           <div className="max-w-4xl space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-serif text-white leading-tight">
-                We take care of your<br className="hidden md:block" /> rental so you don't have to.
+                Expert Property Management<br className="hidden md:block" /> in Greater Seattle.
               </h1>
-              <p className="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
-                Local property management in Greater Seattle — hands-on, honest, and always a phone call away.
-              </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild size="lg" className="h-14 px-8 text-lg rounded-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-xl hover:scale-105 transition-all">
@@ -39,6 +36,7 @@ const Home = () => {
                 <Link to="/listings">View Listings</Link>
               </Button>
             </div>
+
           </div>
         </div>
       </section>
@@ -49,33 +47,33 @@ const Home = () => {
           {[
             {
               icon: ShieldCheck,
-              title: "We screen tenants carefully",
-              description: "We check credit, background, and rental history — so you get reliable people in your home."
+              title: "Low Eviction Rates",
+              description: "Our rigorous screening and proactive management keep legal issues to an absolute minimum."
             },
             {
               icon: Clock,
-              title: "We fill vacancies fast",
-              description: "Good marketing and quick follow-up mean your property isn't sitting empty any longer than it needs to."
+              title: "Minimize Vacancy",
+              description: "Aggressive marketing and rapid response times mean your property is earning faster."
             },
             {
               icon: CheckCircle2,
-              title: "We handle the headaches",
-              description: "Maintenance calls, late payments, lease renewals — we take care of it, and keep you in the loop."
+              title: "Rigorous Screening",
+              description: "Fair Housing compliant vetting including credit, criminal, and rental history."
             },
             {
               icon: TrendingUp,
-              title: "We price it right",
-              description: "We know this market. We'll help you set a rent that attracts great tenants without leaving money behind."
+              title: "Maximize Income",
+              description: "Optimized rental rates based on real-time market data for the Seattle metropolitan area."
             },
             {
               icon: Users,
-              title: "We're a small team — on purpose",
-              description: "You'll know who you're talking to. No call centers, no runaround."
+              title: "Trusted Reputation",
+              description: "A local, hands-on approach that treats your home as if it were our own."
             },
             {
               icon: Globe,
-              title: "You can see everything online",
-              description: "Real-time financials, maintenance updates, and reports — all in one place through your owner portal."
+              title: "24/7 Online Portal",
+              description: "Real-time financial reporting and maintenance tracking powered by Buildium."
             }
           ].map((item, idx) => (
             <div key={idx} className="bg-background p-8 rounded-2xl shadow-sm border border-border hover:shadow-md transition-all group">
@@ -103,7 +101,7 @@ const Home = () => {
           </h2>
           <div className="pt-4">
             <p className="text-xl font-bold font-serif">The Vesta Sound Team</p>
-            <p className="text-primary-foreground/60 text-sm">Your neighbors in Greater Seattle</p>
+            <p className="text-primary-foreground/60 uppercase tracking-widest text-sm">Founded on Trust & Transparency</p>
           </div>
         </div>
       </Section>
@@ -112,7 +110,6 @@ const Home = () => {
       <Section>
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h3 className="text-4xl md:text-5xl font-serif font-bold">How It Works</h3>
-          <p className="text-muted-foreground text-lg">Simple as a conversation.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
@@ -121,18 +118,18 @@ const Home = () => {
           {[
             {
               step: "01",
-              title: "We talk",
-              description: "Tell us about your property. We'll give you a free rental analysis and be straight with you about what to expect."
+              title: "Consult",
+              description: "Free rental analysis and a strategy built around your goals."
             },
             {
               step: "02",
-              title: "We find good tenants",
-              description: "We market your property, field inquiries, and screen applicants — handing you someone you can trust."
+              title: "Market & Screen",
+              description: "Professional marketing and rigorous tenant screening."
             },
             {
               step: "03",
-              title: "We handle the rest",
-              description: "Rent collection, maintenance, reporting. You stay informed without being bothered by the day-to-day."
+              title: "Manage & Report",
+              description: "Rent collection, maintenance, and 24/7 online reporting."
             }
           ].map((item, idx) => (
             <div key={idx} className="relative z-10 text-center space-y-6">
@@ -155,20 +152,19 @@ const Home = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
+              <h2 className="text-sm uppercase tracking-[0.3em] font-bold text-primary">Lead Generation</h2>
               <h3 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
-                Thinking about getting some help with your rental?
+                Ready for a Stress-Free Ownership Experience?
               </h3>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                We'd love to learn about your property and see if we're a good fit. No pressure, no obligation.
-              </p>
+
             </div>
             
             <ul className="space-y-4">
               {[
-                "Free rental analysis — no strings attached",
-                "We manage everything, start to finish",
-                "Straightforward pricing, no surprise fees",
-                "We know Greater Seattle inside and out"
+                "Complimentary Rental Analysis",
+                "Full-Service Management",
+                "Transparent, No-Hype Pricing",
+                "Greater Seattle Local Expertise"
               ].map((benefit, i) => (
                 <li key={i} className="flex items-center space-x-3">
                   <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary">
@@ -182,8 +178,8 @@ const Home = () => {
           
           <div className="bg-background p-8 md:p-12 rounded-3xl shadow-2xl border border-border animate-slide-up">
             <div className="text-center mb-8">
-              <h4 className="text-2xl font-bold font-serif mb-2">Let's Talk About Your Property</h4>
-              <p className="text-muted-foreground">We'll get back to you within one business day.</p>
+              <h4 className="text-2xl font-bold font-serif mb-2">Request Free Analysis</h4>
+              <p className="text-muted-foreground">Get an accurate rental estimate for your property.</p>
             </div>
             <LeadForm type="analysis" />
           </div>
