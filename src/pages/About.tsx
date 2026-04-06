@@ -10,20 +10,6 @@ const About = () => {
         title="About Our Local Expertise" 
         description="Learn about Vesta Sound Property Group's mission to protect your investments and provide hands-on property management in the Seattle and Puget Sound area."
       />
-      {/* Hero Header */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold font-serif leading-tight">
-              About <span className="text-accent">Vesta Sound</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-primary-foreground/80 font-light leading-relaxed">
-              Serving the Greater Seattle & Puget Sound community with integrity, expertise, and a hands-on commitment to excellence.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Mission & Story */}
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
