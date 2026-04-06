@@ -21,14 +21,60 @@ const LeadForm = ({ type = "contact", onSuccess }: LeadFormProps) => {
   const onSubmit = async (data: any) => {
     setIsSubmitting(true);
     try {
+      // Save to database
       await blink.db.leads.create({
-        ...data,
-        type,
+        userId: "public",
+        firstName: data.firstName,
+        lastName: data.lastName,
+        email: data.email,
+        phone: data.phone || null,
+        propertyAddress: data.propertyAddress || null,
+        serviceType: data.serviceType || (type === "analysis" ? "Rental Analysis" : null),
+        message: data.message || null,
+        status: "pending",
       });
-      
+
+      // Send email notification to owner
+      const isAnalysis = type === "analysis";
+      const subject = isAnalysis
+        ? `New Rental Analysis Request – ${data.firstName} ${data.lastName}`
+        : `New Contact Form Submission – ${data.firstName} ${data.lastName}`;
+
+      const html = `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #1a1a1a;">
+          <div style="background: #18181B; padding: 24px; border-radius: 8px 8px 0 0;">
+            <h2 style="color: #ffffff; margin: 0; font-size: 20px;">
+              ${isAnalysis ? "🏠 New Rental Analysis Request" : "📬 New Contact Form Submission"}
+            </h2>
+            <p style="color: #a1a1aa; margin: 4px 0 0; font-size: 14px;">Vesta Sound Property Group</p>
+          </div>
+          <div style="background: #f4f4f5; padding: 24px; border-radius: 0 0 8px 8px;">
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr><td style="padding: 8px 0; color: #71717a; font-size: 14px; width: 140px;">Name</td><td style="padding: 8px 0; font-weight: 600;">${data.firstName} ${data.lastName}</td></tr>
+              <tr><td style="padding: 8px 0; color: #71717a; font-size: 14px;">Email</td><td style="padding: 8px 0;"><a href="mailto:${data.email}" style="color: #18181B;">${data.email}</a></td></tr>
+              ${data.phone ? `<tr><td style="padding: 8px 0; color: #71717a; font-size: 14px;">Phone</td><td style="padding: 8px 0;"><a href="tel:${data.phone}" style="color: #18181B;">${data.phone}</a></td></tr>` : ""}
+              ${data.propertyAddress ? `<tr><td style="padding: 8px 0; color: #71717a; font-size: 14px;">Property</td><td style="padding: 8px 0;">${data.propertyAddress}</td></tr>` : ""}
+              ${data.serviceType ? `<tr><td style="padding: 8px 0; color: #71717a; font-size: 14px;">Service</td><td style="padding: 8px 0;">${data.serviceType}</td></tr>` : ""}
+              ${data.message ? `<tr><td style="padding: 8px 0; color: #71717a; font-size: 14px; vertical-align: top;">Message</td><td style="padding: 8px 0;">${data.message}</td></tr>` : ""}
+            </table>
+            <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid #d4d4d8; font-size: 12px; color: #a1a1aa;">
+              Submitted on ${new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles", dateStyle: "full", timeStyle: "short" })} PT
+            </div>
+          </div>
+        </div>
+      `;
+
+      await blink.notifications.email({
+        to: "sunjos971@gmail.com",
+        replyTo: data.email,
+        subject,
+        html,
+        text: `${subject}\n\nName: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nPhone: ${data.phone || "N/A"}\nProperty: ${data.propertyAddress || "N/A"}\nService: ${data.serviceType || "N/A"}\nMessage: ${data.message || "N/A"}`,
+      });
+
       toast.success(
-        type === "analysis" 
-          ? "Analysis request submitted! We'll be in touch soon." 
+        isAnalysis
+          ? "Analysis request submitted! We'll be in touch soon."
           : "Message sent successfully!"
       );
       reset();
