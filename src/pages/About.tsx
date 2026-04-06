@@ -15,7 +15,7 @@ const About = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold font-serif leading-tight">
-              A Personal Approach to <span className="text-accent">Property Management</span>
+              About <span className="text-accent">Vesta Sound</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/80 font-light leading-relaxed">
               Serving the Greater Seattle & Puget Sound community with integrity, expertise, and a hands-on commitment to excellence.
@@ -42,7 +42,7 @@ const About = () => {
               <h2 className="text-sm uppercase tracking-[0.3em] font-bold text-primary">Our Mission</h2>
               <h3 className="text-4xl font-serif font-bold">Protecting Your Investment, Reducing Your Stress</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Vesta Sound Property Group was founded on a simple principle: property management should be as careful and personal as the management of one's own home.
+                Locally founded, Vesta Sound Property Group is a small Taiwanese American owned business. Built on the belief that great property management starts with treating people right.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 In a market as complex as Seattle, property owners need more than just a rent collector. They need a partner who understands local regulations, maintenance needs, and tenant expectations.
@@ -78,7 +78,7 @@ const About = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-sm uppercase tracking-[0.3em] font-bold text-primary">Local Expertise</h2>
           <h3 className="text-4xl md:text-5xl font-serif font-bold">Puget Sound Specialists</h3>
-          <p className="text-xl text-muted-foreground font-light">We don't just work here; we live here. We know every neighborhood from Ballard to Bellevue.</p>
+          <p className="text-xl text-muted-foreground font-light">We don't just work here — we live here. Deep roots across the Puget Sound region mean we know what renters want and what owners need.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
